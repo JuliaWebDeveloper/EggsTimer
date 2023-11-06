@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер для варки яиц</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Таймер для варки яиц</h1>
+        <p>Время варки засекать после закипания</p>
+        <div id="container-type">
+            <p class="typeOne">ВСМЯТКУ</p>
+            <p class="typeTwo">В МЕШОЧЕК</p>
+            <p class="typeThree">ВКРУТУЮ</p>
+        </div>
+        <div id="egg">
+            <img class="eggOne" src="egg-img-1.jpg" alt="egg" width="200px">
+            <img class="eggTwo" src="egg-img-2.jpg" alt="egg" width="200px">
+            <img class="eggThree" src="egg-img-3.jpg" alt="egg" width="200px">
+        </div>
+        <div id="container-timer">
+            <p id="timer"></p>
+        </div>
+        <input type="button"  id="btn" value="СТАРТ">
+    </div>
+    <audio id="player" loop>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

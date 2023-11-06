@@ -1,0 +1,155 @@
+body {
+    background-image: url(fon2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    font-size: 55px;
+}
+p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#container-type {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.typeOne,.typeTwo,.typeThree {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 50px;
+    font-family: 'Yeseva One', cursive;
+}
+.typeOne:hover,.typeTwo:hover,.typeThree:hover {
+    background-color: green;
+    color: white;
+}
+#timer {
+    font-size: 60px;
+    color: #5a6356;
+    font-family: 'Yeseva One', cursive;
+}
+#btn {
+    background-color: #ffb422;
+    border: 2px solid #d29417;
+    color:white;
+    border-radius: 50px;
+    width: 400px;
+    padding: 15px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 25px;
+}
+.eggOne,.eggTwo,.eggThree {
+    display: none;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+@media all and (max-width: 1280px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 15px;
+    }
+    #btn {
+        font-size: 20px;
+        width: 250px;
+        margin: 0;
+    }
+    .eggOne,.eggTwo,.eggThree {
+        width: 120px;
+        margin: 0;
+    }
+    #timer {
+        font-size: 45px;
+        margin-top: 5px;
+    }
+}
+@media all and (max-width: 912px) {
+    body {
+        background-position:right;
+        background-size: 300%;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #btn {
+        font-size: 25px;
+        width: 400px;
+        
+    }
+    .eggOne,.eggTwo,.eggThree {
+        width: 200px;
+        margin-top: 30px;
+    }
+    #timer {
+        font-size: 50px;
+        margin-top: 45px;
+    }
+}
+@media all and (max-width: 540px) {
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 16px;
+    }
+    #btn {
+        font-size: 20px;
+        width: 300px;
+        
+    }
+    .eggOne,.eggTwo,.eggThree {
+        width: 150px;
+        margin-top: 20px;
+    }
+    #timer {
+        font-size: 40px;
+        margin-top: 35px;
+    }
+}
+@media all and (max-width: 414px) {
+    body {
+        background-position:left;
+        background-size: 385%;
+    }
+    #container { 
+        justify-content: space-evenly;
+    }
+}
+@media all and (max-width: 375px) {
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 12px;
+    }
+    #btn {
+        font-size: 18px;
+        width: 250px;
+    }
+    .eggOne,.eggTwo,.eggThree {
+        width: 100px;
+        margin-top: 10px;
+    }
+    #timer {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+}
